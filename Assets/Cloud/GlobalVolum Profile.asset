@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8714978669366364340
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.9
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1.49
+  scatter:
+    m_OverrideState: 0
+    m_Value: 0.7
+  clamp:
+    m_OverrideState: 0
+    m_Value: 65472
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  highQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 0
+  skipIterations:
+    m_OverrideState: 0
+    m_Value: 1
+  dirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+    dimension: 1
+  dirtIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-8427063336676276743
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aceb869ddafa2e540a7dc71818f2558d, type: 3}
+  m_Name: GodLight
+  m_EditorClassIdentifier: 
+  active: 0
+  mieScatteringFactor:
+    m_OverrideState: 1
+    m_Value: {x: 0.02565, y: 1.64, z: 1.6}
+  tintColor:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1}
+  extictionFactor:
+    m_OverrideState: 1
+    m_Value: 0.03
+  scatteringStrength:
+    m_OverrideState: 1
+    m_Value: 0.121
+  rayMarchingStepCount:
+    m_OverrideState: 1
+    m_Value: 82
+--- !u!114 &-2323059938537346809
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5d06669fb0e074b9a97e11a56a47cf, type: 3}
+  m_Name: VolumetricCloud
+  m_EditorClassIdentifier: 
+  active: 1
+  densityNoise:
+    m_OverrideState: 1
+    m_Value: {fileID: 11700000, guid: 50e5c533877566a4e9ff0398a8249ec4, type: 2}
+  densityErodeTex:
+    m_OverrideState: 1
+    m_Value: {fileID: 11700000, guid: eb01664240661634fb27927b9e3c24c1, type: 2}
+  densityNoiseScale:
+    m_OverrideState: 1
+    m_Value: {x: 0.005, y: 0.005, z: 0.005}
+  densityNoiseOffset:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0, z: 0}
+  densityErode_Scale:
+    m_OverrideState: 1
+    m_Value: {x: 0.04, y: 0.04, z: 0.04}
+  densityErode_Offset:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0, z: 0}
+  densityScale:
+    m_OverrideState: 1
+    m_Value: 0.1
+  densityErode:
+    m_OverrideState: 1
+    m_Value: 0.6
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1}
+  radius:
+    m_OverrideState: 1
+    m_Value: 63000
+  heightMin:
+    m_OverrideState: 1
+    m_Value: 5000
+  heightMax:
+    m_OverrideState: 1
+    m_Value: 6000
+  baseColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  absorption:
+    m_OverrideState: 1
+    m_Value: 0.01
+  lightAbsorption:
+    m_OverrideState: 1
+    m_Value: 0.17
+  lightPower:
+    m_OverrideState: 1
+    m_Value: 0.46
+  sigma:
+    m_OverrideState: 1
+    m_Value: {x: 0.8, y: 1, z: 1.3}
+  hgPhaseG0:
+    m_OverrideState: 1
+    m_Value: 0.54
+  hgPhaseG1:
+    m_OverrideState: 1
+    m_Value: -0.53
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: GlobalVolum Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -2323059938537346809}
+  - {fileID: -8714978669366364340}
+  - {fileID: 4086967960660544620}
+  - {fileID: -8427063336676276743}
+--- !u!114 &4086967960660544620
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
